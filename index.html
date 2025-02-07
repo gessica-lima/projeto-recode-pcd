@@ -3,20 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SuperAção - Inclusão Profissional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="SuperAção - Plataforma de inclusão profissional para pessoas com paraplegia, conectando talentos e empresas inclusivas"
     />
-   
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="SuperAção - Inclusão Profissional" />
+    <meta
+      property="og:description"
+      content="Plataforma de inclusão profissional para pessoas com paraplegia"
+    />
+    <meta property="og:type" content="website" />
+
+    <title>SuperAção - Inclusão Profissional</title>
+
+    <!-- Bootstrap CSS (removida duplicata) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-   
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-75">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary bg-opacity-75"
+      aria-label="Menu principal"
+    >
       <div class="container">
         <a class="navbar-brand" href="#">SuperAção - Inclusão Profissional</a>
         <button
@@ -24,13 +40,16 @@
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#vagas">Vagas</a>
+              <a class="nav-link active" href="#vagas" aria-current="page"
+                >Vagas</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#direitos">Direitos</a>
@@ -47,305 +66,440 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="hero-text">
-                        <h1 class="display-4 mb-4">SuperAção</h1>
-                        <p class="lead mb-4">Nossa plataforma tem como missão principal impulsionar a inclusão de pessoas com paraplegia (PCD) no mercado de trabalho, proporcionando um espaço acessível e informativo para aqueles que buscam oportunidades profissionais alinhadas às suas necessidades.</p>
-                        <p>Nos empenhamos para contribuir com os Objetivos de Desenvolvimento Sustentável (ODS), promovendo o trabalho decente e o crescimento econômico, garantindo que mais pessoas tenham acesso ao emprego pleno, produtivo e digno. Também atuamos na redução das desigualdades, criando oportunidades reais para que pessoas com paraplegia possam desenvolver suas carreiras e alcançar independência financeira.</p>
-                        <p class="mb-4">Acreditamos que a empregabilidade deve ser verdadeiramente inclusiva, sem barreiras físicas ou sociais. Junte-se a nós na construção de um futuro profissional mais justo, acessível e igualitário para todos!</p>
-                        <a href="#vagas" class="btn btn-primary btn-lg">Ver Vagas Disponíveis</a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image">
-                        
-                            <img src="img/card01.jpg" alt="Imagem representativa de inclusão profissional" class="img-fluid rounded" >
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </div>
-    <!-- Vagas em destaque -->
-    <section id="vagas" class="section-padding">
-      <div class="container text-center">
-        <h1 class="display-4 mb-4">Oportunidades de Emprego</h1>
-        <p class="lead">Conectando talentos e empresas inclusivas</p>
-      </div>
-    </div>
-
-    <!-- Vagas em Destaque -->
-    <section id="vagas" class="section-padding">
+    <header class="hero-section">
       <div class="container">
-        <h2 class="text-center mb-5">Vagas em Destaque</h2>
-        <div class="row g-4">
-          <!-- Vaga 1 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card custom-shadow">
-              <div class="card-body">
-                <h5 class="card-title">Analista de Dados</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Empresa Tech SA</h6>
-                <p class="card-text">
-                  Vaga para analista de dados júnior. Ambiente 100% acessível.
-                </p>
-                <ul class="list-unstyled">
-                  <li><small>💼 Remoto</small></li>
-                  <li><small>💰 R$ 4.000 - R$ 5.000</small></li>
-                </ul>
-                <a href="#" class="btn btn-primary">Candidatar-se</a>
-              </div>
-            </div>
-          </div>
-          <!-- Vaga 2 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card custom-shadow">
-              <div class="card-body">
-                <h5 class="card-title">Assistente Administrativo</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Empresa ABC Ltda</h6>
-                <p class="card-text">
-                  Vaga para assistente administrativo. Escritório adaptado.
-                </p>
-                <ul class="list-unstyled">
-                  <li><small>💼 Híbrido</small></li>
-                  <li><small>💰 R$ 2.500 - R$ 3.000</small></li>
-                </ul>
-                <a href="#" class="btn btn-primary">Candidatar-se</a>
-              </div>
-            </div>
-          </div>
-          <!-- Vaga 3 -->
-          <div class="col-md-6 col-lg-4">
-            <div class="card custom-shadow">
-              <div class="card-body">
-                <h5 class="card-title">Desenvolvedor Web</h5>
-                <h6 class="card-subtitle mb-2 text-muted">StartUp XYZ</h6>
-                <p class="card-text">
-                  Desenvolvedor front-end júnior. Flexibilidade de horário.
-                </p>
-                <ul class="list-unstyled">
-                  <li><small>💼 Remoto</small></li>
-                  <li><small>💰 R$ 3.500 - R$ 4.500</small></li>
-                </ul>
-                <a href="#" class="btn btn-primary">Candidatar-se</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Direitos e Legislação -->
-    <section id="direitos" class="section-padding bg-light-blue">
-      <div class="container">
-        <h2 class="text-center mb-5">Direitos e Legislação</h2>
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <div class="card custom-shadow">
-              <div class="card-body">
-                <h5 class="mb-4">Principais Direitos Trabalhistas</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    Cota mínima de vagas em empresas com mais de 100
-                    funcionários
-                  </li>
-                  <li class="list-group-item">
-                    Jornada de trabalho adaptável conforme necessidade
-                  </li>
-                  <li class="list-group-item">
-                    Ambiente de trabalho acessível e adaptado
-                  </li>
-                  <li class="list-group-item">
-                    Aposentadoria especial conforme legislação
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Dicas para Entrevistas -->
-    <section id="dicas" class="section-padding">
-      <div class="container">
-        <h2 class="text-center mb-5">Dicas para Entrevistas</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card custom-shadow h-100">
-              <div class="card-body">
-                <h5 class="card-title">Preparação</h5>
-                <p class="card-text">
-                  Pesquise sobre a empresa e prepare-se para destacar suas
-                  habilidades e experiências relevantes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card custom-shadow h-100">
-              <div class="card-body">
-                <h5 class="card-title">Durante a Entrevista</h5>
-                <p class="card-text">
-                  Seja confiante e focado em suas competências. Comunique
-                  claramente suas necessidades de adaptação.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card custom-shadow h-100">
-              <div class="card-body">
-                <h5 class="card-title">Pós-Entrevista</h5>
-                <p class="card-text">
-                  Envie um e-mail de agradecimento e mantenha contato
-                  profissional com o recrutador.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<!-- Seção Empresas Parceiras -->
-<section id="parceiros" class="section-padding">
-    <div class="container">
-        
         <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="pe-lg-4">
-                    <h3 class="mb-4">Por que se tornar um parceiro?</h3>
-                    <div class="card custom-shadow mb-4">
-                        <div class="card-body">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <h5>✨ Acesso a Talentos Qualificados</h5>
-                                    <p class="mb-0">Conecte-se com profissionais capacitados e prontos para agregar valor à sua empresa.</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h5>📊 Suporte em Acessibilidade</h5>
-                                    <p class="mb-0">Orientação sobre adaptações e melhores práticas para um ambiente de trabalho inclusivo.</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h5>🤝 Compromisso Social</h5>
-                                    <p class="mb-0">Fortaleça sua marca como empresa comprometida com a diversidade e inclusão.</p>
-                                </li>
-                                <li class="list-group-item">
-                                    <h5>📝 Gestão de Vagas</h5>
-                                    <p class="mb-0">Plataforma intuitiva para publicação e gerenciamento de oportunidades.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+          <div class="col-lg-6">
+            <div class="hero-text">
+              <h1 class="display-4 mb-4">SuperAção</h1>
+              <p class="lead mb-4">
+                Nossa plataforma tem como missão principal impulsionar a
+                inclusão de pessoas com paraplegia (PCD) no mercado de trabalho,
+                proporcionando um espaço acessível e informativo para aqueles
+                que buscam oportunidades profissionais alinhadas às suas
+                necessidades.
+              </p>
+              <p>
+                Nos empenhamos para contribuir com os Objetivos de
+                Desenvolvimento Sustentável (ODS), promovendo o trabalho decente
+                e o crescimento econômico, garantindo que mais pessoas tenham
+                acesso ao emprego pleno, produtivo e digno. Também atuamos na
+                redução das desigualdades, criando oportunidades reais para que
+                pessoas com paraplegia possam desenvolver suas carreiras e
+                alcançar independência financeira.
+              </p>
+              <p class="mb-4">
+                Acreditamos que a empregabilidade deve ser verdadeiramente
+                inclusiva, sem barreiras físicas ou sociais. Junte-se a nós na
+                construção de um futuro profissional mais justo, acessível e
+                igualitário para todos!
+              </p>
+              <a href="#vagas" class="btn btn-primary btn-lg"
+                >Ver Vagas Disponíveis</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img
+                src="img/card01.jpg"
+                alt="Imagem representativa de inclusão profissional"
+                class="img-fluid rounded"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <!-- Vagas em destaque -->
+      <section
+        id="vagas"
+        class="section-padding"
+        aria-labelledby="vagas-titulo"
+      >
+        <div class="container text-center">
+          <h2 id="vagas-titulo" class="display-4 mb-4">
+            Oportunidades de Emprego
+          </h2>
+          <p class="lead">Conectando talentos e empresas inclusivas</p>
+        </div>
+
+        <div class="container">
+          <h3 class="text-center mb-5">Vagas em Destaque</h3>
+          <div class="row g-4">
+            <!-- Vaga 1 -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card custom-shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Analista de Dados</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">Empresa Tech SA</h5>
+                  <p class="card-text">
+                    Vaga para analista de dados júnior. Ambiente 100% acessível.
+                  </p>
+                  <ul class="list-unstyled">
+                    <li><small>💼 Remoto</small></li>
+                    <li><small>💰 R$ 4.000 - R$ 5.000</small></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Candidatar-se</a>
                 </div>
+              </div>
+            </article>
+            <!-- Vaga 2 -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card custom-shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Assistente Administrativo</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">
+                    Empresa ABC Ltda
+                  </h5>
+                  <p class="card-text">
+                    Vaga para assistente administrativo. Escritório adaptado.
+                  </p>
+                  <ul class="list-unstyled">
+                    <li><small>💼 Híbrido</small></li>
+                    <li><small>💰 R$ 2.500 - R$ 3.000</small></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Candidatar-se</a>
+                </div>
+              </div>
+            </article>
+            <!-- Vaga 3 -->
+            <article class="col-md-6 col-lg-4">
+              <div class="card custom-shadow">
+                <div class="card-body">
+                  <h4 class="card-title">Desenvolvedor Web</h4>
+                  <h5 class="card-subtitle mb-2 text-muted">StartUp XYZ</h5>
+                  <p class="card-text">
+                    Desenvolvedor front-end júnior. Flexibilidade de horário.
+                  </p>
+                  <ul class="list-unstyled">
+                    <li><small>💼 Remoto</small></li>
+                    <li><small>💰 R$ 3.500 - R$ 4.500</small></li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Candidatar-se</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Direitos e Legislação -->
+      <section
+        id="direitos"
+        class="section-padding bg-light-blue"
+        aria-labelledby="direitos-titulo"
+      >
+        <div class="container">
+          <h2 id="direitos-titulo" class="text-center mb-5">
+            Direitos e Legislação
+          </h2>
+          <div class="row">
+            <div class="col-md-8 mx-auto">
+              <div class="card custom-shadow">
+                <div class="card-body">
+                  <h3 class="mb-4">Principais Direitos Trabalhistas</h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      Cota mínima de vagas em empresas com mais de 100
+                      funcionários
+                    </li>
+                    <li class="list-group-item">
+                      Jornada de trabalho adaptável conforme necessidade
+                    </li>
+                    <li class="list-group-item">
+                      Ambiente de trabalho acessível e adaptado
+                    </li>
+                    <li class="list-group-item">
+                      Aposentadoria especial conforme legislação
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dicas para Entrevistas -->
+      <section
+        id="dicas"
+        class="section-padding"
+        aria-labelledby="dicas-titulo"
+      >
+        <div class="container">
+          <h2 id="dicas-titulo" class="text-center mb-5">
+            Dicas para Entrevistas
+          </h2>
+          <div class="row g-4">
+            <article class="col-md-4">
+              <div class="card custom-shadow h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Preparação</h3>
+                  <p class="card-text">
+                    Pesquise sobre a empresa e prepare-se para destacar suas
+                    habilidades e experiências relevantes.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-4">
+              <div class="card custom-shadow h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Durante a Entrevista</h3>
+                  <p class="card-text">
+                    Seja confiante e focado em suas competências. Comunique
+                    claramente suas necessidades de adaptação.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="col-md-4">
+              <div class="card custom-shadow h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Pós-Entrevista</h3>
+                  <p class="card-text">
+                    Envie um e-mail de agradecimento e mantenha contato
+                    profissional com o recrutador.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Seção Empresas Parceiras-->
+      <section
+        id="parceiros"
+        class="section-padding"
+        aria-labelledby="parceiros-titulo"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="pe-lg-4">
+                <h3 class="mb-4">Por que se tornar um parceiro?</h3>
+                <div class="card custom-shadow mb-4">
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <h5>✨ Acesso a Talentos Qualificados</h5>
+                        <p class="mb-0">
+                          Conecte-se com profissionais capacitados e prontos
+                          para agregar valor à sua empresa.
+                        </p>
+                      </li>
+                      <li class="list-group-item">
+                        <h5>📊 Suporte em Acessibilidade</h5>
+                        <p class="mb-0">
+                          Orientação sobre adaptações e melhores práticas para
+                          um ambiente de trabalho inclusivo.
+                        </p>
+                      </li>
+                      <li class="list-group-item">
+                        <h5>🤝 Compromisso Social</h5>
+                        <p class="mb-0">
+                          Fortaleça sua marca como empresa comprometida com a
+                          diversidade e inclusão.
+                        </p>
+                      </li>
+                      <li class="list-group-item">
+                        <h5>📝 Gestão de Vagas</h5>
+                        <p class="mb-0">
+                          Plataforma intuitiva para publicação e gerenciamento
+                          de oportunidades.
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6">
               <h2 class="text-center mb-5">Seja uma Empresa Parceira</h2>
-              
-                <div class="card custom-shadow">
-                    
-                  <div class="card-body">
-                      
-                        <h4 class="card-title mb-4">Cadastro de Empresa</h4>
-                        <form>
-                            <div class="mb-3">
-                                <label for="empresa" class="form-label">Nome da Empresa</label>
-                                <input type="text" class="form-control" id="empresa" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="cnpj" class="form-label">CNPJ</label>
-                                <input type="text" class="form-control" id="cnpj" placeholder="Digite o CNPJ sem pontuação" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="responsavel" class="form-label">Nome do Responsável</label>
-                                <input type="text" class="form-control" id="responsavel" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email-empresa" class="form-label">E-mail Corporativo</label>
-                                <input type="email" class="form-control" id="email-empresa" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="telefone" class="form-label">Telefone</label>
-                                <input type="tel" class="form-control" id="telefone" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="setor" class="form-label">Setor de Atuação</label>
-                                <select class="form-select" id="setor" required>
-                                    <option value="">Selecione um setor</option>
-                                    <option value="tecnologia">Tecnologia</option>
-                                    <option value="saude">Saúde</option>
-                                    <option value="educacao">Educação</option>
-                                    <option value="financeiro">Financeiro</option>
-                                    <option value="varejo">Varejo</option>
-                                    <option value="outro">Outro</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem-empresa" class="form-label">Por que sua empresa quer ser parceira?</label>
-                                <textarea class="form-control" id="mensagem-empresa" rows="3" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Cadastrar Empresa</button>
-                        </form>
+
+              <div class="card custom-shadow">
+                <div class="card-body">
+                  <h4 class="card-title mb-4">Cadastro de Empresa</h4>
+                  <form>
+                    <div class="mb-3">
+                      <label for="empresa" class="form-label"
+                        >Nome da Empresa</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="empresa"
+                        required
+                      />
                     </div>
+                    <div class="mb-3">
+                      <label for="cnpj" class="form-label">CNPJ</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="cnpj"
+                        placeholder="Digite o CNPJ sem pontuação"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="responsavel" class="form-label"
+                        >Nome do Responsável</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="responsavel"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="email-empresa" class="form-label"
+                        >E-mail Corporativo</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email-empresa"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="telefone" class="form-label">Telefone</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefone"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="setor" class="form-label"
+                        >Setor de Atuação</label
+                      >
+                      <select class="form-select" id="setor" required>
+                        <option value="">Selecione um setor</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="saude">Saúde</option>
+                        <option value="educacao">Educação</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="varejo">Varejo</option>
+                        <option value="outro">Outro</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="mensagem-empresa" class="form-label"
+                        >Por que sua empresa quer ser parceira?</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="mensagem-empresa"
+                        rows="3"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                      Cadastrar Empresa
+                    </button>
+                  </form>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-</section>
-
-
-
-  <!-- Formulário de Contato -->
-  <section id="contato-form" class="section-padding bg-light-blue">
-  <div class="container">
-    <div class="row align-items-center justify-content-center">
-      <!-- Coluna da imagem -->
-      <div class="col-md-6 mb-4 mb-md-0">
-        <div class="text-center">
-          <img src="img/poster03.png" alt="Imagem de contato" class="img-fluid rounded shadow" style="width: 70%;" />
-        </div>
-      </div>
-      
-      <!-- Coluna do formulário (à direita) -->
-      <div class="col-md-6">
-        
-        <div class="card custom-shadow" style="max-width: 450px; margin: 0 auto;">
-          <div class="card-body">
-            <h2 class="text-center mb-5">Entre em Contato</h2>
-            <form>
-              <div class="mb-4">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" required />
-              </div>
-              <div class="mb-4">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" required />
-              </div>
-              <div class="mb-4">
-                <label for="mensagem" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">Enviar</button>
-            </form>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
+
+      <!-- Formulário de Contato -->
+      <section
+        id="contato-form"
+        class="section-padding bg-light-blue"
+        aria-labelledby="contato-titulo"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <!-- Coluna da imagem -->
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div class="text-center">
+                <img
+                  src="img/poster03.png"
+                  alt="Imagem de contato"
+                  class="img-fluid rounded shadow"
+                  style="width: 70%"
+                />
+              </div>
+            </div>
+
+            <!-- Coluna do formulário (à direita) -->
+            <div class="col-md-6">
+              <div
+                class="card custom-shadow"
+                style="max-width: 450px; margin: 0 auto"
+              >
+                <div class="card-body">
+                  <h2 class="text-center mb-5">Entre em Contato</h2>
+                  <form>
+                    <div class="mb-4">
+                      <label for="nome" class="form-label">Nome</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nome"
+                        required
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="email" class="form-label">E-mail</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label for="mensagem" class="form-label">Mensagem</label>
+                      <textarea
+                        class="form-control"
+                        id="mensagem"
+                        rows="4"
+                        required
+                      ></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Rodapé -->
-    <footer id="contato" class="footer py-4 text-center bg-primary bg-opacity-75">
+    <footer
+      id="contato"
+      class="footer py-4 text-center bg-primary bg-opacity-75"
+    >
       <div class="container">
         <p class="copy fw-bold">
-          &copy; 2025 SuperAção. Todos os direitos reservados.</p>
+          &copy; 2025 SuperAção. Todos os direitos reservados.
+        </p>
         <p>
-          <a href="#" class="text-dark text-decoration-none">Política de Privacidade</a> |
+          <a href="#" class="text-dark text-decoration-none"
+            >Política de Privacidade</a
+          >
+          |
           <a href="#" class="text-dark text-decoration-none">Termos de Uso</a> |
-          <a href="mailto:contato@superacao.com" class="text-dark text-decoration-none">Contato</a>
+          <a
+            href="mailto:contato@superacao.com"
+            class="text-dark text-decoration-none"
+            >Contato</a
+          >
         </p>
       </div>
     </footer>
